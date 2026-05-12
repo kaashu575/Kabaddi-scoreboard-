@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kabaddi Scoreboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scoreboard">
+
+<div class="team left">
+<input type="text" value="TEAM A">
+<div class="score" id="score1">00</div>
+
+<div class="buttons">
+<button onclick="updateScore(1,1)">+</button>
+<button onclick="updateScore(1,-1)">-</button>
+</div>
+</div>
+
+<div class="center">
+<div class="timer" id="timer">20:00</div>
+
+<input type="text" id="half" value="1ST HALF">
+
+<div class="timerButtons">
+<button onclick="startTimer()">START</button>
+<button onclick="stopTimer()">STOP</button>
+<button onclick="resetTimer()">RESET</button>
+</div>
+</div>
+
+<div class="team right">
+<input type="text" value="TEAM B">
+<div class="score" id="score2">00</div>
+
+<div class="buttons">
+<button onclick="updateScore(2,1)">+</button>
+<button onclick="updateScore(2,-1)">-</button>
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
